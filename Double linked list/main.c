@@ -12,12 +12,12 @@ LDC * AllouerNoeud()
     LDC * nv_elem;
     nv_elem=(LDC*)malloc(sizeof(LDC));
     if(nv_elem==NULL) {printf("Memoire insuffisante\n"); exit(-1);}
-    else {nv_elem->suivant=NULL; 
+    else {nv_elem->suivant=NULL;
           nv_elem->precedent=NULL;
          return nv_elem;
          }
          }
-         
+
 //2°
 LDC * inserer_tete(LDC * L, int nv){
 
@@ -39,7 +39,7 @@ void afficher(LDC *L)
      courant=courant->suivant;
      }
      printf("\n");
-}   
+}
 
 //3°
 LDC * inserer_fin(LDC * L,int nv){
@@ -60,7 +60,7 @@ return L;}
 LDC *supprimer(LDC *L)
 {
     LDC * courant=L,*elem_supp;
-    
+
     while(courant)
     {
                   if(courant->valeur>=0){courant=courant->suivant;}
@@ -79,15 +79,15 @@ LDC *supprimer(LDC *L)
                        courant->suivant->precedent=courant->precedent;
                        courant=courant->suivant;
                        }
-                                                           
-                       
+
+
                        free(elem_supp);
                        }
                        }
                   return L;
                   }
-    
-                  
+
+
 //7°
 
 void enregistrer(LDC *L, char *nom_fich)
@@ -106,28 +106,27 @@ fclose(F);}
 }
 
 
-                              
-                  
+
+
 main()
 { LDC *L; char nom_fichier[20];
       L=NULL;
-     
+
       L=inserer_fin(L,11);
       L=inserer_fin(L,222);
       L=inserer_fin(L,4444);
       L=inserer_fin(L,333);
       afficher(L);
-      
-      
+
+
       L=supprimer(L);
       printf("\n");
       afficher(L);
       printf("Donner le nom de fichier:");
       scanf("%s",nom_fichier);
       enregistrer(L,nom_fichier);
-      
+
       system("pause");
       }
-      
 
 

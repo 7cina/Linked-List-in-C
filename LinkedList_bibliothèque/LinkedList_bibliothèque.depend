@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1662490423 source:g:\mon drive\git--------\linked-list-in-c\linkedlist_bibliothèque\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

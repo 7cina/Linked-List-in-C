@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1662506425 source:g:\mon drive\git--------\linked-list-in-c\double linked list_polynom\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

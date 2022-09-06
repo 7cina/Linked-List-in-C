@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1662504862 source:g:\mon drive\git--------\linked-list-in-c\simplelinkedlist_student\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
